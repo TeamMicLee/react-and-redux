@@ -31,7 +31,7 @@ Weather.propTypes = {
   highestTemp: PropTypes.string
 };
 
-const mapStateTopProps = (state) => {
+const mapStateToProps = (state) => {
   const weatherData = state.weather;
 
   return {
@@ -43,4 +43,4 @@ const mapStateTopProps = (state) => {
   };
 }
 
-export default connect(mapStateTopProps)(Weather);
+export default connect(mapStateToProps)(Weather);
